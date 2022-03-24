@@ -1,0 +1,257 @@
+/*
+ont-family: 'Press Start 2P', cursive;
+font-family: 'Secular One', sans-serif;
+*/
+* {
+  margin: 0;
+}
+/* ---------------- BARRA NAVEGACION ---------------------*/
+.logo {
+  text-decoration: none;
+  color: white;
+  font-size: 40px;
+  line-height: 70px;
+  margin-left: 100px;
+}
+.logo:hover {
+  transition: all 0.3s ease-in-out;
+  color: #31806c;
+}
+header,
+footer {
+  font-family: "Secular One", sans-serif;
+}
+nav {
+  height: 70px;
+  width: 100%;
+  background-color: #232c36;
+  display: inline-flex;
+  justify-content: space-between;
+}
+.nav-bar {
+  list-style-type: none;
+  display: inline-flex;
+  margin-right: 3vw;
+}
+.nav-link {
+  transition: all 0.3s ease;
+  text-decoration: none;
+  line-height: 70px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 2rem;
+}
+.nav-link:hover {
+  color: #8dd9c7;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  /* text-shadow: 1px 1px 10px #FFF; */
+}
+/* ---------------Pokedex-------------------- */
+main {
+  background-color: #d1e8d4;
+  padding: 2em 0;
+}
+.pokedex {
+  border: #215e4f solid 3px;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  min-width: 32em;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#logo-pokedex {
+  display: block;
+  width: 35%;
+  padding: 1.5rem;
+  margin: 0 auto;
+}
+.pkmn_search {
+  width: fit-content;
+  margin: 1.5rem auto;
+  display: flex;
+}
+.search-icon {
+  height: 20px;
+  padding: 4px;
+  vertical-align: middle;
+}
+#pkmn_id {
+  width: 250px;
+  height: 40px;
+  border: none;
+  background-color: #fff;
+  color: #2f2f2f;
+  font-family: "Secular one", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+#buscar {
+  font-family: "Secular one", sans-serif;
+  height: 40px;
+  background-color: #379e84;
+  border: none;
+}
+#buscar:hover {
+  background-color: #8dd9c7;
+}
+.pkdx-info {
+  background-image: url("./assets/Pokedexpokedex2.svg");
+  background-size: cover;
+  width: 30.1em;
+  height: 50em;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  font-family: "Press Start 2P", sans-serif;
+  margin-bottom: 2em;
+}
+.img-name-id {
+  display: inline-block;
+  width: 60%;
+  text-align: left;
+}
+#pkmn_image {
+  height: 150px;
+  width: fit-content;
+  margin: 1rem 0 0 7rem;
+}
+#pkmn_name {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-left: 5px;
+  display: inline;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 12px;
+  color: #2f2f2f;
+}
+#pkmn_number {
+  width: 50px;
+  display: inline-block;
+  margin-left: 5.5rem;
+  color: #fff;
+  font-size: 13px;
+  padding-top: 9.5rem;
+}
+.info-extra {
+  vertical-align: top;
+  margin-top: 10.8rem;
+  text-align: center;
+  font-size: 15px;
+  display: inline-block;
+  width: 100px;
+}
+#pkmn_weight {
+  margin-top: 2.6rem;
+}
+#tipos {
+  margin-top: 2.6rem;
+  height: 100px;
+  width: 90px;
+}
+.type {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  text-align: center;
+  padding: 4px;
+  color: white;
+  font-size: 10px;
+  border-radius: 3px;
+}
+.stats {
+  display: flex;
+  margin: 0 auto;
+  padding-top: 5px;
+  width: fit-content;
+  margin-top: 1.8em;
+  font-size: 13px;
+  text-align: center;
+  color: #095378;
+}
+.stats p{
+    width:42px;
+    margin:0 6px;
+}
+.stats-2 {
+  display: inline-block;
+  width: auto;
+  line-height: 24px;
+  margin-left: 22%;
+}
+#description {
+  color: #fae20c;
+  font-size: 15px;
+  width: 300px;
+  margin: 0 auto;
+}
+.description-title {
+  text-align: center;
+  margin-top: 10rem;
+}
+.description-text {
+  margin-top: 1.5rem;
+  font-size: 13px;
+}
+
+/* -----------------Footer------------------- */
+footer {
+  background-color: #379e84;
+  color: whitesmoke;
+  font-weight: 100;
+}
+footer h4 {
+  color: #215e4f;
+  font-size: 18px;
+}
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1em;
+  margin: 0 7em;
+}
+footer a {
+  transition: color 0.4s ease;
+  text-decoration: none;
+  color: #8dd9c7;
+}
+footer a:hover {
+  color: #fff;
+}
+.site-info {
+  display: flex;
+  text-align: center;
+}
+.footer-list {
+  text-align: center;
+  margin-left: 4rem;
+}
+.footer-list ul {
+  line-height: 1.2em;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+  list-style-type: none;
+}
+.footer-terms {
+  padding-top: 2rem;
+  display: block;
+  width: fit-content;
+text-align: center;
+  margin: 0 auto;
+  padding-bottom: 1em;
+}
+.footer-terms-dev{
+    font-weight: 600;
+    color: #2f2f2f;
+}
+.footer-terms ul {
+  display: flex;
+  list-style-type: none;
+  padding-inline-start: 0;
+ 
+}
+.footer-terms li {
+  margin: 0 1em 0 0;
+}

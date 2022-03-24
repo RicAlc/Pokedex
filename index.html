@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Secular+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">PokeWiki</a>
+            <ul class="nav-bar">
+                <li><a href="#" class="nav-link">POKEMONES</a></li>
+                <li><a href="#" class="nav-link">BLOG</a></li>
+                <li><a href="#" class="nav-link">ACTUALIZACIONES</a></li>
+                <li><a href="#" class="nav-link">JUEGOS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="pokedex">
+            <img src="./assets/pokedex.png" alt="logo pokedex" id="logo-pokedex">
+            </div>
+            <div class="pkmn_search" onsubmit="fetchPokemon()">
+                <input type="text" placeholder="Pikachu ó 25" id="pkmn_id" name="pkmn_id">
+                <button onclick="fetchPokemon()" id="buscar"><img src="./assets/search.png"
+                        class="search-icon"></button>
+            </div>
+            <div class="pkdx-info">
+                <div class="img-name-id">
+                    <p id="pkmn_number">###</p>
+                    <p id="pkmn_name">???</p>
+                    <img src="./assets/Pokemon_silhouette.png" alt="Pokemon" id="pkmn_image">
+                </div>
+                <div class="info-extra">
+                    <p id="pkmn_height">M</p>
+                    <p id="pkmn_weight">KG</p>
+                    <div id="tipos"></div>
+                </div>
+                <div class="stats">
+                    <p id="ps">0</p>
+                    <p id="atk">0</p>
+                    <p id="def">0</p>
+                    <p id="spatk">0</p>
+                    <p id="spdef">0</p>
+                    <p id="speed">0</p>
+                </div>
+                <div id="description">
+                    <p class="description-title">DESCRIPCION</p>
+                    <div id="desc-text-container"></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer-info">
+            <div id="atributes">
+                <h4 class="atributes-title">ATRIBUCIONES</h4>
+                <p><a href="https://pokeapi.co/" target="blank_">PokeApi</a></p>
+            </div>
+            <div class="site-info">
+                <div class="footer-list">
+                    <h4>ACERCA DE</h4>
+                    <ul>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Noticias</a></li>
+                    </ul>
+                </div>
+                <div class="footer-list">
+                    <h4>SOPORTE</h4>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Soporte</a></li>
+                        <li><a href="#">Contactanos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-terms">
+            <ul>
+                <li><a href="#">Terminos y condiciones</a></li>
+                <li><a href="#">Politica de privacidad</a></li>
+            </ul>
+            <a href="https://github.com/RicAlc" class="footer-terms-dev">RICARDO ALCALÁ CASTRO</a>
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+<script src="data.js"></script>
+
+</html>
