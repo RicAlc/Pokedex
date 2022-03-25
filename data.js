@@ -89,5 +89,5 @@ var tipos = [
     trad:"HADA", 
     color:"#f0b6bc"
     },
-]
+];
 

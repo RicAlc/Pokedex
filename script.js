@@ -7,7 +7,8 @@ const fetchPokemon = () => {
     fetch(url_1).then((res) => {
         if (res.status != "200") {
             console.log(res);
-            pokeImage("/assets/sad.gif")
+            //Envia datos de error
+            error();
         }
         else {
             return res.json();
@@ -45,10 +46,9 @@ const fetchPokemon = () => {
     fetch(url_2).then((res) => {
         if (res.status != "200") {
             console.log(res);
-            pokeImage("/assets/sad.gif")
         }
         else {
-            console.log(res)
+            console.log(res);
             return res.json();
         }
         
@@ -118,7 +118,12 @@ const pokemonDescription = (url_2) => {
     let newElement = document.createElement("p");
     newElement.appendChild(desc_text);
     newElement.classList.add("description-text");
-    document.getElementById("desc-text-container").appendChild(newElement)
+    document.getElementById("desc-text-container").appendChild(newElement);
 }
-
-
+function error(){
+    document.getElementById("tipos").innerHTML = "";
+    pokemonImg("./assets/missingno.png");
+    pokemonStats([0,0,0,0,0,0]);
+    pokemonData(["Error", "??", "??","??"]);
+    pokemonDescription("Vaya, parece que no encontramos lo que buscas. Asegurate de escribir correctamente el nombre o el ID.");
+}
